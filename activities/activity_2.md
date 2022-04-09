@@ -10,27 +10,23 @@ Then read on, to find out how...
 
 ## Step 1
 
--   In the `components` folder create a file/component called `cat_card.tsx`
+- In the `components` folder create a file/component called `cat_card.tsx`
 
--   Add this code to `cat_card.tsx`:
+- Add this code to `cat_card.tsx`:
 
 ```JavaScript
 const CatCard : React.FC = () =>
         <div className="card">
-            <h3 className="card__text card__header">Mr Gwumpy</h3>
-            <p className="card__text">Species: Cat</p>
-            <p className="card__text">Favourite Food(s): Caviar</p>
-            <p className="card__text">Birth Year: 1984</p>
         </div>;
 
 export default CatCard;
 ```
 
--   Save your file
+- Save your file
 
 ## Step 2
 
--   At the top of `App.tsx` import your cat card
+- At the top of `App.tsx` import your cat card
 
 <details>
 <summary>Click here to see the answer</summary>

@@ -4,7 +4,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import { useState } from 'react';
 import Cat from './data/cat';
-import CardCat from './components/cat_card'
+import CatCard from './components/cat_card'
 
 function App() {
 	// JavaScript code can be inserted here!
@@ -93,7 +93,9 @@ function App() {
 
 			<main>
 		    <div className='cards__wrapper'>
-           
+             {cats.map((cat) =>{
+				 return <CatCard />
+			 })}
 				</div>
 			</main>
 
