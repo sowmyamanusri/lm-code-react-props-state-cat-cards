@@ -74,10 +74,10 @@ We're going to need to define what a cat is!
 
 👉 Look at `data/cat.ts` - there's a blank interface. We care about:
 
--   name
--   species
--   favFoods
--   birthYear
+- name
+- species
+- favFoods
+- birthYear
 
 👉 Add the above fields to the Cat interface in `data/cat.ts`, together with appropriate type annotations. (Answer below.)
 
