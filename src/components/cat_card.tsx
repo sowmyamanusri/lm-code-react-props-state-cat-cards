@@ -136,7 +136,6 @@ const CatCard : React.FC<CatCardProps>  = ({ name,species,favFoods,birthYear,cat
         licenceUrl ={images[catIndex].licenceUrl}
          attributionName={images[catIndex].attributionName} 
          attributionUrl={images[catIndex].attributionUrl}/>)}
-        
         <p className="card__text">Species: {species}</p>
         <p className="card__text">Favourite Food(s): {favFoods}</p>
         <p className="card__text">Birth Year: {birthYear}</p>
