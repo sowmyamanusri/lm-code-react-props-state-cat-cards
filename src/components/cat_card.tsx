@@ -109,7 +109,8 @@ const images = [
 		licenceUrl: 'https://creativecommons.org/licenses/by-sa/2.0/',
 		attributionName: 'x-oph',
 		attributionUrl: 'https://www.flickr.com/people/x-oph/'
-	}
+	},
+    
 ];
 
 
@@ -127,12 +128,12 @@ interface CatCardProps {
 const CatCard : React.FC<CatCardProps>  = ({name,species,favFoods,birthYear,catIndex})=>
     <div className = "card">
         <h3 className="card__text card__header">{name}</h3>
-        <CatImage image ={images[catIndex].image}  
+     { catIndex <images.length &&(<CatImage image ={images[catIndex].image}  
         altText ={images[catIndex].altText}
          licenceType ={images[catIndex].licenceType} 
         licenceUrl ={images[catIndex].licenceUrl}
          attributionName={images[catIndex].attributionName} 
-         attributionUrl={images[catIndex].attributionUrl}/>
+         attributionUrl={images[catIndex].attributionUrl}/>)}
         <p className="card__text">Species: {species}</p>
         <p className="card__text">Favourite Food(s): {favFoods}</p>
         <p className="card__text">Birth Year: {birthYear}</p>
