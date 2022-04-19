@@ -1,8 +1,8 @@
 export default interface Dog {
     id ?: string;
     name: string;
-    image: string;
-    altText: string;
+    img ?: string;
+    altText ?:string
     species: string;
     favFoods: Array<string>;
     birthYear: number;

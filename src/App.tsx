@@ -6,6 +6,7 @@ import  { useState } from 'react';
 import Dog from './data/dog';
 import Dogs from './data/dog-data';
 import DogCard from './components/dog_card';
+import DogSubmitForm from './components/dogSubmitForm';
 
 
 
@@ -28,7 +29,7 @@ function App() {
 				 return <DogCard 
 				 key ={dog.id}
 				 name ={dog.name} 
-				 image ={dog.image}
+				 image ={dog.img}
 				 altText ={dog.altText}
 				 species ={dog.species} 
 				 favFoods = {dog.favFoods} 
@@ -36,6 +37,7 @@ function App() {
 			 }))}
 				</div>
 			</main>
+          <DogSubmitForm/>
 
 			<Footer />
 		</>
