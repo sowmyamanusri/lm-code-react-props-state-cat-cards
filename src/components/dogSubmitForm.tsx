@@ -2,7 +2,7 @@
  import Dog from '../data/dog';
 
  const DogSubmitForm: React.FC =()=>{
-  const [ state, setState ] = useState<Dog>({
+  const [ state, setState ] = useState<any>({
     name: "",
     species: " ",
     favFoods: [],
@@ -15,8 +15,7 @@
 
   function handleChange(e:any){
     const value = e.target.value;
-    console.log(value);
-    setState({...state,[e.target.name]:value})
+     setState({...state,[e.target.name]:value})
   }
 
    return(
@@ -27,6 +26,7 @@
     Name:
     </label>
     <input
+      name = "name"
       value={state.name}
       onChange={handleChange}/>
       </div>
@@ -35,6 +35,7 @@
     Species:
     </label>
     <input
+      name ="species"
       value={state.species}
       onChange={handleChange}/>
       </div>
@@ -43,7 +44,17 @@
     FavFoods:
     </label>
     <input
+    name = "favFoods"
       value={state.favFoods}
+      onChange={handleChange}/>
+  </div>
+  <div className ="container">
+      <label className="form__label">
+    BirthYear:
+    </label>
+    <input
+    name="birthYear"
+      value={state.birthYear}
       onChange={handleChange}/>
   </div>
  <div className ="container">
